@@ -8,6 +8,11 @@
   .text-web3-grad {
     @apply bg-gradient-to-r from-[#FF2C7E] to-[#FFC700] text-transparent bg-clip-text;
   }
+
+  .text-web3-gradd {
+    @apply bg-gradient-to-r from-[#FFC700] to-[#FF2C7E] text-transparent bg-clip-text;
+  }
+
   .border-web3-grad {
     @apply bg-gradient-to-r from-[#FF2C7E] to-[#FFC700] ;
   }
@@ -17,4 +22,22 @@ body {
   margin: 0;
   font-family: "Fira Code", "Roboto Mono", monospace;
   color: #2E214D;
+  overflow-x: hidden;
+}
+
+
+
+body::-webkit-scrollbar {
+  width: 10px; /* Mostly for vertical scrollbars */
+
+}
+
+.dark::-webkit-scrollbar{
+  background-color: #2E214D;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(46, 33, 77, 0.8);
+  border-radius: 10px;
+
 }

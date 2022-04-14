@@ -8,7 +8,8 @@ module.exports = {
     extend: {
       colors: {
         darkblue: '#2E214D',
-        myRose: "#FF2C7E"
+        myRose: "#FF2C7E",
+        myRoseEluded: "rgba(255, 44, 126, 0.5)"
       },
       backgroundImage: {
         "pieces" : "url(./assets/ProjectShowcaseImages/pieces.png)",
@@ -16,5 +17,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+      require('tailwind-scrollbar')
+  ],
 }
