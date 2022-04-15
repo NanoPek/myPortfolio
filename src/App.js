@@ -38,7 +38,7 @@ function App() {
 
 
   return (
-      <div className={`${darkModded ? "dark w-screen " : "w-screen "}`}>
+      <div className={`${darkModded ? "dark w-screen selection:bg-myRose selection:text-white " : "w-screen selection:bg-myRose selection:text-white"}`}>
           <header className={"sticky top-0 left-0 w-screen h-16 shadow-lg  bg-white dark:bg-darkblue flex justify-between items-center "}>
               <div className={"h-full flex items-center cursor-pointer border-myRose hover:font-bold transition "} onClick={toggleDarkMode}>
                   <img src={ darkModded ? icon_web3 : icon_web2} className={"rounded-3xl max-h-12 mx-2 "}/>
