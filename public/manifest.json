@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Jeremie Carrez Portfolio",
+  "name": "Jeremie Carrez Portfolio",
   "icons": [
     {
       "src": "favicon.ico",
@@ -13,13 +13,13 @@
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "logo.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "294x294"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#2E214D",
   "background_color": "#ffffff"
 }
