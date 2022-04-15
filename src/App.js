@@ -54,7 +54,7 @@ function App() {
           </header>
           <div className={"w-screen  dark:bg-darkblue dark:text-white "} >
               <div className={" px-6 flex flex-col items-center flex flex-col justify-between  "}>
-                  <div className={"pt-12 flex flex-col gap-2 lg:gap-5 lg:px-16  xl:px-32 2xl:px-64"}>
+                  <div className={" lg:pt-6 2xl:pt-12 flex flex-col gap-2 2xl:gap-5 lg:px-16  xl:px-32 2xl:px-64"}>
                       <p className={" text-xl"} >
                           Hey, my name is
                       </p>
