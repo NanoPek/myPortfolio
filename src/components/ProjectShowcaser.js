@@ -18,10 +18,10 @@ function ProjectShowcaser(props) {
                 </p>
                 { props.externalLink ?
                     <a href={props.externalLink}>
-                        <img src={require(`./../assets/ProjectShowcaseImages/${props.name}.png`)} className={"my-4 rounded-lg max-h-96 "}/>
+                        <img src={require(`./../assets/ProjectShowcaseImages/${props.name}.png`)} className={"my-4 rounded-lg lg:max-h-48 2xl:max-h-96 "}/>
                     </a> :
 
-                    <img src={require(`./../assets/ProjectShowcaseImages/${props.name}.png`)} className={"my-4 rounded-lg max-h-96 "}/>
+                    <img src={require(`./../assets/ProjectShowcaseImages/${props.name}.png`)} className={"my-4 rounded-lg lg:max-h-48 2xl:max-h-96 "}/>
                 }
                 <p className={"text-justify "}>
                     {props.description}

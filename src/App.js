@@ -53,7 +53,7 @@ function App() {
               </div>
           </header>
           <div className={"w-screen  dark:bg-darkblue dark:text-white "} >
-              <div className={" px-6 flex flex-col items-center flex flex-col justify-between lg:h-[calc(100vh-64px)] "}>
+              <div className={" px-6 flex flex-col items-center flex flex-col justify-between  "}>
                   <div className={"pt-12 flex flex-col gap-2 lg:gap-5 lg:px-16  xl:px-32 2xl:px-64"}>
                       <p className={" text-xl"} >
                           Hey, my name is
@@ -162,7 +162,7 @@ function App() {
 
                   }
                   <div className={"text-myRose  flex   my-6    justify-center"}>
-                      <div className={"bg-myRose p-1 rounded-lg hover:text-white dark:border-web3-grad xl:w-1/6 "}>
+                      <div className={"bg-myRose p-1 rounded-lg hover:text-white dark:border-web3-grad xl:w-1/5 2xl:w-1/4"}>
                           <div className={"bg-white rounded-lg  h-full  hover:bg-myRoseEluded dark:bg-darkblue dark:hover:bg-transparent transition-colors "} onClick={toggleDarkMode}>
                               <button className={"w-full h-full font-bold px-8 py-4 dark:text-web3-grad dark:hover:text-white  "}>
                                   My {darkModded ? "web2" : "web3"} Projects!
