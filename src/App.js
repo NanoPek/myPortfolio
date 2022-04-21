@@ -25,7 +25,7 @@ function App() {
         },
         {
             name:"Tools & else",
-            skills:[["Notion","#37352f"],["Figma","#eb4c1d"],["Gsuite","#4285f4"],["Jetbrains","#000000"]],
+            skills:[["Notion","#37352f"],["Figma","#eb4c1d"],["Gsuite","#4285f4"],["Jetbrains","#000000"],["PWA","#e0d7fe"]],
             thirdWeb:[["HardHat","#f4db00"],["Remix","#2684a2"],["Polygon","#8247e5"]]
         }
     ]
@@ -135,7 +135,7 @@ function App() {
                               bigName={"Customizable Coin System"}
                               description={"A web app / PWA to gamify and reward events participation.\n" +
                                   "Profile creation, item shop and leaderboard implemented, coins are given via a smart QR code system scanned at every event."}
-                              skills={[["full-stack","#FF782C"],["Vue","#42B883"],["Nuxt","#00DC82"],["Strapi","#8E75FF"],["Tailwind","#38bdf8"]]}
+                              skills={[["full-stack","#FF782C"],["mobile","#ea4c1d"],["Vue","#42B883"],["Nuxt","#00DC82"],["Strapi","#8E75FF"],["Tailwind","#38bdf8"],["PWA","#e0d7fe"]]}
                           />
                           <ProjectShowcaser
                               name={"hi7haut"}
