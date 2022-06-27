@@ -13,11 +13,11 @@ function Footer(props) {
                 <a href={"https://github.com/NanoPek"} className={"hover:text-myRose transition-colors"}><FiGithub/></a>
                 <a href={"https://www.linkedin.com/in/j%C3%A9r%C3%A9mie-carrez/"} className={"hover:text-myRose transition-colors"}><FiLinkedin/></a>
                 <a href={"https://twitter.com/NanoPekTo"} className={"hover:text-myRose transition-colors"}><FiTwitter/></a>
-                <a href={"mailto:jeremcarrez@gmail.com"} className={"hover:text-myRose transition-colors"}><FiMail/></a>
+                <a href={"mailto:nanopek.pro@gmail.com"} className={"hover:text-myRose transition-colors"}><FiMail/></a>
             </div>
             <a href={"https://github.com/NanoPek/myPortfolio"} className={"text-sm flex flex-col items-center hover:text-myRose transition-colors "}>
                 <p >
-                    Designed & Built by @{props.darkModded ? "Nano" : "Jeremie Carrez"}
+                    Designed & Built by @{props.darkModded ? "Nano" : "Jeremie Carrez"} - contact : nanopek.pro@gmail.com
                 </p>
                 <div className={"flex items-center"}>
                     <FiStar className={"text-md"}/>

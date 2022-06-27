@@ -45,7 +45,7 @@ function App() {
                   <p className={"text-web3-grad text-center dark:text-web3-gradd"}> 	&#x27F5; Switch to { darkModded ? "web2" : "web3"}</p>
               </div>
               <div className={"mr-3 text-3xl flex gap-4 lg:mr-8 dark:text-white"}>
-                  <a href={"mailto:jeremcarrez@gmail.com"} className={"hover:text-myRose transition-colors"}><FiMail/></a>
+                  <a href={"mailto:nanopek.pro@gmail.com"} className={"hover:text-myRose transition-colors"}><FiMail/></a>
                   <a href={"https://github.com/NanoPek"} className={"hover:text-myRose transition-colors"}><FiGithub/></a>
                   <a href={"https://www.linkedin.com/in/j%C3%A9r%C3%A9mie-carrez/"} className={"hover:text-myRose transition-colors"}><FiLinkedin/></a>
                   <a href={"https://twitter.com/NanoPekTo"} className={"hover:text-myRose transition-colors"}><FiTwitter/></a>
