@@ -3,12 +3,10 @@ import React from 'react';
 import { FiGithub } from 'react-icons/fi';
 import { FiExternalLink } from 'react-icons/fi';
 
-import background from "./../assets/ProjectShowcaseImages/pieces.png"
-
-function ProjectShowcaser(props) {
+function ProjectShowCaser(props) {
     return (
-        <div className={"w-full h-full  "}>
-            <div className={"z-10 w-full px-3 border-2 border-myRose shadow-xl flex flex-col items-center lg:h-full text-center justify-between"} >
+        <div className={"w-full h-full "}>
+            <div className={" h-full w-full px-8 py-4 border-2 border-myRose shadow-xl flex flex-col items-center lg:h-full text-center justify-between"} >
 
                 <p className={"font-bold text-myRose mt-4"}>
                     Featured Project
@@ -18,10 +16,10 @@ function ProjectShowcaser(props) {
                 </p>
                 { props.externalLink ?
                     <a href={props.externalLink}>
-                        <img src={require(`./../assets/ProjectShowcaseImages/${props.name}.png`)} className={"my-4 rounded-lg lg:max-h-48 2xl:max-h-96 "}/>
+                        <img src={require(`./../assets/ProjectShowcaseImages/${props.name}.png`)}  alt={props.name} className={"my-4 rounded-lg lg:max-h-48 2xl:max-h-96 "} />
                     </a> :
 
-                    <img src={require(`./../assets/ProjectShowcaseImages/${props.name}.png`)} className={"my-4 rounded-lg lg:max-h-48 2xl:max-h-96 "}/>
+                    <img src={require(`./../assets/ProjectShowcaseImages/${props.name}.png`)}  alt={props.name} className={"my-4 rounded-lg lg:max-h-48 2xl:max-h-96 "}/>
                 }
                 <p className={"text-justify "}>
                     {props.description}
@@ -33,12 +31,12 @@ function ProjectShowcaser(props) {
                 </div>
                 <div className={"flex gap-4 text-xl mb-6 w-full px-6 "}>
                     { props.github &&
-                        <a href={props.github}>
-                            <FiGithub />
+                        <a href={props.github} className={"hover:text-myRose transition-colors"}>
+                            <FiGithub  />
                         </a>
                     }
                     { props.externalLink &&
-                        <a href={props.externalLink}>
+                        <a href={props.externalLink} className={"hover:text-myRose transition-colors"}>
                             <FiExternalLink/>
                         </a>
                     }
@@ -50,4 +48,4 @@ function ProjectShowcaser(props) {
     );
 }
 
-export default ProjectShowcaser;
+export default ProjectShowCaser;

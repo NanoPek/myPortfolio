@@ -1,4 +1,4 @@
-import ProjectShowcaser from "./components/ProjectShowcaser";
+import ProjectShowCaser from "./components/ProjectShowCaser";
 import React, {useState} from "react";
 
 import icon_web2 from "./assets/icon_web2.jpg"
@@ -11,24 +11,28 @@ import { FiLinkedin } from 'react-icons/fi';
 import { FiTwitter } from 'react-icons/fi';
 import Footer from "./components/Footer";
 
+const skillsTab = [
+    {
+        name:"Techs",
+        skills:[["Python","#3776aa"],["Java","#ed0000"],["C","#283395"],["JavaScript","#efd81d"],["React","#61DAFB"],["Vue","#42B883"],["Nuxt","#00DC82"],["Node.js","#83cd29"],["Strapi","#8E75FF"],["Sanity.io","#f03e2f"],["Sass, SCSS","#c76494"],["Tailwind","#38bdf8"]],
+        thirdWeb:[["Solidity","#363636"],["ThirdWeb","#7908b8"]]
+    },
+    {
+        name:"Tools & else",
+        skills:[["Notion","#37352f"],["Figma","#eb4c1d"],["Gsuite","#4285f4"],["Jetbrains","#000000"],["PWA","#e0d7fe"]],
+        thirdWeb:[["HardHat","#f4db00"],["Remix","#2684a2"],["Polygon","#8247e5"]]
+    }
+]
 
+const styles = {
+    grid: "grid grid-cols-2 items-center mt-6 gap-4 lg:gap-8 lg:grid-cols-2 xl:grid-cols-3 lg:w-11/12 lg:mx-auto",
+};
 
 function App() {
 
     const [darkModded, setDarkModded] = useState(false);
 
-    const skillsTab = [
-        {
-            name:"Techs",
-            skills:[["Python","#3776aa"],["Java","#ed0000"],["C","#283395"],["JavaScript","#efd81d"],["React","#61DAFB"],["Vue","#42B883"],["Nuxt","#00DC82"],["Node.js","#83cd29"],["Strapi","#8E75FF"],["Sanity.io","#f03e2f"],["Sass, SCSS","#c76494"],["Tailwind","#38bdf8"]],
-            thirdWeb:[["Solidity","#363636"],["ThirdWeb","#7908b8"]]
-        },
-        {
-            name:"Tools & else",
-            skills:[["Notion","#37352f"],["Figma","#eb4c1d"],["Gsuite","#4285f4"],["Jetbrains","#000000"],["PWA","#e0d7fe"]],
-            thirdWeb:[["HardHat","#f4db00"],["Remix","#2684a2"],["Polygon","#8247e5"]]
-        }
-    ]
+
 
 
     const toggleDarkMode = () => {
@@ -41,7 +45,7 @@ function App() {
       <div className={`${darkModded ? "dark w-screen selection:bg-myRose selection:text-white " : "w-screen selection:bg-myRose selection:text-white"}`}>
           <header className={"sticky top-0 left-0 w-screen h-16 shadow-lg  bg-white dark:bg-darkblue flex justify-between items-center "}>
               <div className={"h-full flex items-center cursor-pointer border-myRose hover:font-bold transition "} onClick={toggleDarkMode}>
-                  <img src={ darkModded ? icon_web3 : icon_web2} className={"rounded-3xl max-h-12 mx-2 "}/>
+                  <img src={ darkModded ? icon_web3 : icon_web2} alt={`Switch to ${ darkModded ? "web2" : "web3"}`} className={"rounded-3xl max-h-12 mx-2 "}/>
                   <p className={"text-web3-grad text-center dark:text-web3-gradd"}> 	&#x27F5; Switch to { darkModded ? "web2" : "web3"}</p>
               </div>
               <div className={"mr-3 text-3xl flex gap-4 lg:mr-8 dark:text-white"}>
@@ -102,8 +106,8 @@ function App() {
                   </div>
                   {darkModded ?
 
-                      <div className={"grid grid-cols-1 items-center mt-6 gap-4 lg:grid-cols-2 xl:grid-cols-3"}>
-                          <ProjectShowcaser
+                      <div className={styles.grid}>
+                          <ProjectShowCaser
                               name={"opensea"}
                               bigName={"Opensea Marketplace Clone"}
                               description={"A Kirby themed Opensea (NFT trading platform) clone on Rinkeby Testnet. An account is linked to each address that sign to the website, enabling profile modification. \n NFT reselling and buying is implemented"}
@@ -111,7 +115,7 @@ function App() {
                               github={"https://github.com/NanoPek/kirby-marketplace"}
                               externalLink={"https://kirby-marketplace.vercel.app/"}
                           />
-                          <ProjectShowcaser
+                          <ProjectShowCaser
                               name={"DAO"}
                               bigName={"Kirby's DAO"}
                               description={"A Kirby themed DAO on Rinkeby Testnet. Mint a NFT to access and vote in the DAO. DAO's Token repartion is showed as well as all proposals currently available."}
@@ -119,7 +123,7 @@ function App() {
                               github={"https://github.com/NanoPek/buildspace-dao-starter"}
                               externalLink={"https://kirby-s-dao.vercel.app/"}
                           />
-                          <ProjectShowcaser
+                          <ProjectShowCaser
                               name={"ENS"}
                               bigName={"Custom ENS Domain Provider"}
                               description={"A Custom .kirby ENS Domain Provider on Mumbai ( L2 Polygon Testnet). Mint a custom .kirby domain and link it with another link, a custom text or a gif. All domains are showed in the website and accessible by anyone."}
@@ -129,15 +133,15 @@ function App() {
                           />
                       </div> :
 
-                      <div className={"grid grid-cols-1 items-center mt-6 gap-4 lg:grid-cols-2"}>
-                          <ProjectShowcaser
+                      <div className={styles.grid}>
+                          <ProjectShowCaser
                               name={"pieces"}
                               bigName={"Customizable Coin System"}
                               description={"A web app / PWA to gamify and reward events participation.\n" +
                                   "Profile creation, item shop and leaderboard implemented, coins are given via a smart QR code system scanned at every event."}
                               skills={[["full-stack","#FF782C"],["mobile","#ea4c1d"],["Vue","#42B883"],["Nuxt","#00DC82"],["Strapi","#8E75FF"],["Tailwind","#38bdf8"],["PWA","#e0d7fe"]]}
                           />
-                          <ProjectShowcaser
+                          <ProjectShowCaser
                               name={"hi7haut"}
                               bigName={"Showcase website"}
                               description={"A website to present a student association and post news and articles."}
@@ -145,13 +149,13 @@ function App() {
                               externalLink={"https://www.hi7haut.fr/"}
                               github={"https://github.com/NanoPek/hi7haut-vitrine"}
                           />
-                          <ProjectShowcaser
+                          <ProjectShowCaser
                               name={"cadavrexquis"}
                               bigName={"CadavrExquis"}
                               description={'A game website where players can play the graphical version of "Cadavre Exquis"  online.'}
                               skills={[["React","#61DAFB"],["Node.js","#83cd29"],["p5.js","#ed225d"]]}
                           />
-                          <ProjectShowcaser
+                          <ProjectShowCaser
                               name={"portfolio"}
                               bigName={"This portfolio :)"}
                               description={"My personal e-portfolio ! Don't forget to check my web3 projects 🦄"}
