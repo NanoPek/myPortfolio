@@ -23,7 +23,7 @@ function SkillContainer(props: {
 					{skills.map((value) => (
 						<div
 							key={value.name}
-							className="text-white py-1 px-2 text-xs rounded-xl flex justify-center items-center w-24 "
+							className="text-white py-1 px-2 text-xs rounded-xl flex justify-center items-center w-24 text-center "
 							style={{ backgroundColor: value.color }}
 						>
 							<p>{value.name}</p>

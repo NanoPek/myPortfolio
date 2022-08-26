@@ -27,10 +27,6 @@ const skillsTab = [
 				color: "#61DAFB",
 			},
 			{
-				name: "ReactNative",
-				color: "#61DAFB",
-			},
-			{
 				name: "Vue",
 				color: "#42B883",
 			},
@@ -41,6 +37,10 @@ const skillsTab = [
 			{
 				name: "Nuxt",
 				color: "#00DC82",
+			},
+			{
+				name: "Next",
+				color: "#000000",
 			},
 			{
 				name: "Python",
@@ -79,6 +79,31 @@ const skillsTab = [
 		],
 	},
 	{
+		name: "Mobile",
+		skills: [
+			{
+				name: "React Native",
+				color: "#61DAFB",
+			},
+			{
+				name: "Android Development",
+				color: "#4ecf75",
+			},
+			{
+				name: "iOS Development",
+				color: "#666666",
+			},
+			{
+				name: "Firebase",
+				color: "#f58410",
+			},
+			{
+				name: "PWA",
+				color: "#666666",
+			},
+		],
+	},
+	{
 		name: "Tools & else",
 		skills: [
 			{
@@ -86,20 +111,24 @@ const skillsTab = [
 				color: "#37352f",
 			},
 			{
-				name: "Figma",
-				color: "#eb4c1d",
+				name: "GHubActions",
+				color: "#000000",
 			},
 			{
-				name: "Gsuite",
-				color: "#4285f4",
+				name: "Retool",
+				color: "#262626",
+			},
+			{
+				name: "Figma",
+				color: "#eb4c1d",
 			},
 			{
 				name: "Jetbrains",
 				color: "#000000",
 			},
 			{
-				name: "PWA",
-				color: "#e0d7fe",
+				name: "ESLint",
+				color: "#482fbd",
 			},
 		],
 		thirdWeb: [
@@ -198,7 +227,7 @@ function App() {
 						<p className="text-xl text-myRose font-bold dark:text-web3-grad ">
 							Discover my projects!
 						</p>
-						<FiArrowDown className="text-5xl mt-4 text-myRose  animate-bounce  " />
+						<FiArrowDown className="text-5xl mt-4 text-myRose animate-bounce -z-50  " />
 					</div>
 				</div>
 				<div className="flex flex-col px-6">
@@ -339,7 +368,7 @@ function App() {
 										},
 										{
 											name: "PWA",
-											color: "#e0d7fe",
+											color: "#666666",
 										},
 									]}
 								/>
